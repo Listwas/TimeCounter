@@ -5,13 +5,13 @@ import time
 __author__ = 'Listwas'
 
 # Wait for user input
-input('Wciśnij enter aby zacząć liczyć\n')
+input('Press ENTER to start counting\n Hit CTRL+C to stop the counter')
 
 counter = 1
 try:
     while True:
-        print(counter)
+        print(counter, end='\r')
         time.sleep(1)
         counter += 1
 except KeyboardInterrupt:
-    print("\nodliczanie trwało: ", str(counter) + "s")
+    print("\rCounting lasted: ", str(counter) + "s")
