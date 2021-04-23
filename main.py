@@ -3,6 +3,7 @@
 import time
 
 __author__ = 'Listwas'
+__version__ = '1.1'
 
 # Wait for user input
 input('Press ENTER to start counting\n Hit CTRL+C to stop the counter')
