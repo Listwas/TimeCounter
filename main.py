@@ -16,7 +16,7 @@ week = 0
 try:
     while True:
         print(f'                \r{week:02}:{day:02}:{hour:02}:{mins:02}:{sec:02}', end='\r')
-        time.sleep(0.0001)
+        time.sleep(1)
         sec += 1
         if sec == 60:
             sec = 0
