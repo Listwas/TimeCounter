@@ -12,7 +12,7 @@ mins = 0
 try:
     while True:
         print(f'    \r{mins:02}:{sec:02}', end='\r')
-        time.sleep(0.2)
+        time.sleep(1)
         sec += 1
         if sec == 60:
             sec = 0
