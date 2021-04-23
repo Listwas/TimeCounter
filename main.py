@@ -8,7 +8,10 @@ __author__ = 'Listwas'
 input('Wciśnij enter aby zacząć liczyć\n')
 
 counter = 1
-while True:
-    print(counter)
-    time.sleep(1)
-    counter += 1
+try:
+    while True:
+        print(counter)
+        time.sleep(1)
+        counter += 1
+except KeyboardInterrupt:
+    print("\nodliczanie trwało: ", str(counter) + "s")
